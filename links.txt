@@ -1,0 +1,8 @@
+Thumbstick example: https://42bots.com/tutorials/arduino-joystick-module-example/
+
+Lambdas / anonymous functions in Arduino: https://forum.arduino.cc/index.php?topic=436961.0
+
+Arduino multithreading: https://arduino.stackexchange.com/questions/286/how-can-i-create-multiple-running-threads
+
+
+

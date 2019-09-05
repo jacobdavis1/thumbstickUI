@@ -1,0 +1,830 @@
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-09-03 17:26:37
+count workspace : c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI
+total files : 185
+total code lines : 585
+total comment lines : 72
+total blank lines : 147
+
+.gitignore, code is 5, comment is 0, blank is 0.
+.pio\build\.sconsign.dblite, it is a binary file.
+.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib718\libSPI.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\lib829\libMaix_KPU.a, it is a binary file.
+.pio\build\sipeed-maixduino\lib829\Maix_KPU\Maix_KPU.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_GFX.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_SPITFT.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\glcdfont.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\libAdafruit-GFX-Library.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\libSipeed_ST7789.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\lcd.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\Sipeed_ST7789.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\src\Console.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\Display.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\Thumbstick.cpp.o, it is a binary file.
+.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.gitignore, code is 5, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\.sconsign.dblite, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\libWire.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\Wire\Wire.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\include\README, code is 13, comment is 1, blank is 5.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\lib\README, code is 37, comment is 2, blank is 9.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\platformio.ini, code is 8, comment is 10, blank is 2.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\src\main.cpp, code is 8, comment is 0, blank is 3.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\test\README, code is 8, comment is 1, blank is 3.
+include\Display.h, code is 13, comment is 2, blank is 6.
+include\OS\Console.h, code is 18, comment is 1, blank is 6.
+include\OS\Scheduler.h, code is 12, comment is 5, blank is 4.
+include\OS\Task.h, code is 17, comment is 5, blank is 6.
+include\README, code is 13, comment is 1, blank is 5.
+include\Thumbstick.h, code is 22, comment is 4, blank is 7.
+include\UI\Menu.h, code is 18, comment is 3, blank is 6.
+include\UI\Program.h, code is 13, comment is 5, blank is 4.
+include\UI\UIBuilder.h, code is 0, comment is 0, blank is 0.
+include\UI\Widgets.h, code is 35, comment is 3, blank is 12.
+include\WindowManager.h, code is 0, comment is 0, blank is 0.
+lib\README, code is 37, comment is 2, blank is 9.
+links.txt, code is 3, comment is 3, blank is 5.
+platformio.ini, code is 8, comment is 10, blank is 4.
+src\Display.cpp, code is 13, comment is 0, blank is 5.
+src\main.cpp, code is 19, comment is 2, blank is 5.
+src\OS\Console.cpp, code is 39, comment is 0, blank is 9.
+src\Thumbstick.cpp, code is 86, comment is 3, blank is 17.
+test\README, code is 8, comment is 1, blank is 3.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-09-04 18:11:14
+count workspace : c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI
+total files : 199
+total code lines : 699
+total comment lines : 79
+total blank lines : 174
+
+.gitignore, code is 5, comment is 0, blank is 0.
+.pio\build\.sconsign.dblite, it is a binary file.
+.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib718\libSPI.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\lib829\libMaix_KPU.a, it is a binary file.
+.pio\build\sipeed-maixduino\lib829\Maix_KPU\Maix_KPU.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_GFX.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_SPITFT.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\glcdfont.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\libAdafruit-GFX-Library.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\libSipeed_ST7789.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\lcd.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\Sipeed_ST7789.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\src\Display.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Console.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Scheduler.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Task.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\WindowManager.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\Thumbstick.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Menu.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Program.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\UIBuilder.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Widgets.cpp.o, it is a binary file.
+.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.gitignore, code is 5, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\.sconsign.dblite, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\libWire.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\Wire\Wire.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\include\README, code is 13, comment is 1, blank is 5.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\lib\README, code is 37, comment is 2, blank is 9.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\platformio.ini, code is 8, comment is 10, blank is 2.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\src\main.cpp, code is 8, comment is 0, blank is 3.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\test\README, code is 8, comment is 1, blank is 3.
+include\Display.h, code is 13, comment is 2, blank is 6.
+include\OS\Console.h, code is 18, comment is 1, blank is 6.
+include\OS\Scheduler.h, code is 17, comment is 5, blank is 8.
+include\OS\Task.h, code is 16, comment is 8, blank is 5.
+include\OS\WindowManager.h, code is 16, comment is 4, blank is 5.
+include\README, code is 13, comment is 1, blank is 5.
+include\Thumbstick.h, code is 22, comment is 4, blank is 7.
+include\UI\Menu.h, code is 18, comment is 3, blank is 6.
+include\UI\Program.h, code is 13, comment is 5, blank is 4.
+include\UI\UIBuilder.h, code is 0, comment is 0, blank is 0.
+include\UI\Widgets.h, code is 35, comment is 3, blank is 12.
+lib\README, code is 37, comment is 2, blank is 9.
+links.txt, code is 3, comment is 3, blank is 5.
+platformio.ini, code is 9, comment is 10, blank is 5.
+src\Display.cpp, code is 17, comment is 0, blank is 4.
+src\main.cpp, code is 28, comment is 2, blank is 4.
+src\OS\Console.cpp, code is 39, comment is 0, blank is 9.
+src\OS\Scheduler.cpp, code is 48, comment is 0, blank is 11.
+src\OS\Task.cpp, code is 32, comment is 0, blank is 9.
+src\OS\WindowManager.cpp, code is 0, comment is 0, blank is 0.
+src\Thumbstick.cpp, code is 86, comment is 3, blank is 17.
+src\UI\Menu.cpp, code is 0, comment is 0, blank is 0.
+src\UI\Program.cpp, code is 0, comment is 0, blank is 0.
+src\UI\UIBuilder.cpp, code is 0, comment is 0, blank is 0.
+src\UI\Widgets.cpp, code is 0, comment is 0, blank is 0.
+test\README, code is 8, comment is 1, blank is 3.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-09-04 19:40:26
+count workspace : c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI
+total files : 199
+total code lines : 819
+total comment lines : 85
+total blank lines : 218
+
+.gitignore, code is 5, comment is 0, blank is 0.
+.pio\build\.sconsign.dblite, it is a binary file.
+.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib718\libSPI.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\lib829\libMaix_KPU.a, it is a binary file.
+.pio\build\sipeed-maixduino\lib829\Maix_KPU\Maix_KPU.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_GFX.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_SPITFT.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\glcdfont.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\libAdafruit-GFX-Library.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\libSipeed_ST7789.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\lcd.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\Sipeed_ST7789.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\src\Display.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Console.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Scheduler.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Task.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\WindowManager.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\Thumbstick.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Menu.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Program.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\UIBuilder.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Widgets.cpp.o, it is a binary file.
+.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.gitignore, code is 5, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\.sconsign.dblite, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\libWire.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\Wire\Wire.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\include\README, code is 13, comment is 1, blank is 5.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\lib\README, code is 37, comment is 2, blank is 9.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\platformio.ini, code is 8, comment is 10, blank is 2.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\src\main.cpp, code is 8, comment is 0, blank is 3.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\test\README, code is 8, comment is 1, blank is 3.
+include\Display.h, code is 16, comment is 2, blank is 7.
+include\OS\Console.h, code is 18, comment is 1, blank is 6.
+include\OS\Scheduler.h, code is 17, comment is 5, blank is 8.
+include\OS\Task.h, code is 16, comment is 8, blank is 5.
+include\OS\WindowManager.h, code is 16, comment is 4, blank is 5.
+include\README, code is 13, comment is 1, blank is 5.
+include\Thumbstick.h, code is 22, comment is 4, blank is 7.
+include\UI\Menu.h, code is 31, comment is 5, blank is 10.
+include\UI\Program.h, code is 13, comment is 5, blank is 4.
+include\UI\UIBuilder.h, code is 0, comment is 0, blank is 0.
+include\UI\Widgets.h, code is 37, comment is 3, blank is 13.
+lib\README, code is 37, comment is 2, blank is 9.
+links.txt, code is 3, comment is 3, blank is 5.
+platformio.ini, code is 9, comment is 10, blank is 5.
+src\Display.cpp, code is 17, comment is 0, blank is 4.
+src\main.cpp, code is 29, comment is 2, blank is 4.
+src\OS\Console.cpp, code is 39, comment is 0, blank is 9.
+src\OS\Scheduler.cpp, code is 48, comment is 0, blank is 11.
+src\OS\Task.cpp, code is 32, comment is 0, blank is 9.
+src\OS\WindowManager.cpp, code is 0, comment is 0, blank is 0.
+src\Thumbstick.cpp, code is 86, comment is 3, blank is 17.
+src\UI\Menu.cpp, code is 52, comment is 1, blank is 18.
+src\UI\Program.cpp, code is 0, comment is 0, blank is 0.
+src\UI\UIBuilder.cpp, code is 0, comment is 0, blank is 0.
+src\UI\Widgets.cpp, code is 49, comment is 3, blank is 20.
+test\README, code is 8, comment is 1, blank is 3.
+===============================================================================
+===============================================================================
+EXTENSION NAME : linecount
+EXTENSION VERSION : 0.1.7
+-------------------------------------------------------------------------------
+count time : 2019-09-04 20:39:44
+count workspace : c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI
+total files : 199
+total code lines : 836
+total comment lines : 91
+total blank lines : 223
+
+.gitignore, code is 5, comment is 0, blank is 0.
+.pio\build\.sconsign.dblite, it is a binary file.
+.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib718\libSPI.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\lib829\libMaix_KPU.a, it is a binary file.
+.pio\build\sipeed-maixduino\lib829\Maix_KPU\Maix_KPU.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_GFX.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\Adafruit_SPITFT.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\Adafruit-GFX-Library\glcdfont.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\lib9b5\libAdafruit-GFX-Library.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\libSipeed_ST7789.a, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\lcd.c.o, it is a binary file.
+.pio\build\sipeed-maixduino\libfd0\Sipeed_ST7789\Sipeed_ST7789.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+.pio\build\sipeed-maixduino\src\Display.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Console.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Scheduler.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\Task.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\OS\WindowManager.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\Thumbstick.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Menu.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Program.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\UIBuilder.cpp.o, it is a binary file.
+.pio\build\sipeed-maixduino\src\UI\Widgets.cpp.o, it is a binary file.
+.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.gitignore, code is 5, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\.sconsign.dblite, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\project.checksum, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.bin, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\firmware.elf, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\abi.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hal\Maix_SPI.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\hooks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\IPAddress.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\crt.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\entry_user.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\interrupt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\printf.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\sleep.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\bsp\syscalls.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\aes.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\apu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\clint.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dmac.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\dvp.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fft.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\fpioa.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpio.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\gpiohs.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2c.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\i2s.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\kpu.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\plic.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\pwm.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\rtc.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sha256.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\spi.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysclock.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\sysctl.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\timer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uart.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\uarths.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\utils.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\drivers\wdt.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\core_sync.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\croutine.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\event_groups.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\list.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\locks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\os_entry.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\heap_4.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\port.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\portable\portasm.S.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\pthread.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\queue.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\stream_buffer.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\tasks.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\kendryte-standalone-sdk\lib\freertos\timers.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Print.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\st7789.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\stdlib_noniso.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Stream.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\Tone.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\UARTClass.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WInterrupts.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_analog.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_digital.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_pulse.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\wiring_shift.c.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WMath.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\FrameworkArduino\WString.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\libWire.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\lib7f5\Wire\Wire.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduino.a, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\libFrameworkArduinoVariant.a, code is 1, comment is 0, blank is 0.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.pio\build\sipeed-maixduino\src\main.cpp.o, it is a binary file.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\.travis.yml, code is 61, comment is 4, blank is 6.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\include\README, code is 13, comment is 1, blank is 5.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\lib\README, code is 37, comment is 2, blank is 9.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\platformio.ini, code is 8, comment is 10, blank is 2.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\src\main.cpp, code is 8, comment is 0, blank is 3.
+c:\Users\jacob\Documents\PlatformIO\Projects\thumbstickUI_espSlave\test\README, code is 8, comment is 1, blank is 3.
+include\Display.h, code is 16, comment is 2, blank is 7.
+include\OS\Console.h, code is 18, comment is 1, blank is 6.
+include\OS\Scheduler.h, code is 17, comment is 5, blank is 8.
+include\OS\Task.h, code is 16, comment is 8, blank is 5.
+include\OS\WindowManager.h, code is 16, comment is 4, blank is 5.
+include\README, code is 13, comment is 1, blank is 5.
+include\Thumbstick.h, code is 22, comment is 4, blank is 7.
+include\UI\Menu.h, code is 30, comment is 6, blank is 10.
+include\UI\Program.h, code is 13, comment is 5, blank is 4.
+include\UI\UIBuilder.h, code is 0, comment is 0, blank is 0.
+include\UI\Widgets.h, code is 37, comment is 3, blank is 13.
+lib\README, code is 37, comment is 2, blank is 9.
+links.txt, code is 3, comment is 3, blank is 5.
+platformio.ini, code is 9, comment is 10, blank is 5.
+src\Display.cpp, code is 17, comment is 0, blank is 4.
+src\main.cpp, code is 27, comment is 3, blank is 7.
+src\OS\Console.cpp, code is 39, comment is 0, blank is 9.
+src\OS\Scheduler.cpp, code is 48, comment is 0, blank is 11.
+src\OS\Task.cpp, code is 32, comment is 0, blank is 9.
+src\OS\WindowManager.cpp, code is 0, comment is 0, blank is 0.
+src\Thumbstick.cpp, code is 86, comment is 3, blank is 17.
+src\UI\Menu.cpp, code is 68, comment is 5, blank is 19.
+src\UI\Program.cpp, code is 0, comment is 0, blank is 0.
+src\UI\UIBuilder.cpp, code is 0, comment is 0, blank is 0.
+src\UI\Widgets.cpp, code is 53, comment is 3, blank is 21.
+test\README, code is 8, comment is 1, blank is 3.
+===============================================================================
