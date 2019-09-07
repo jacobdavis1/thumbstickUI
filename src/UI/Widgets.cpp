@@ -10,6 +10,17 @@ Widget::Widget(String newName, String newText, uint16_t newTextSize, uint16_t ne
     generateDimensions();
 }
 
+Widget::Widget(String newName)
+    : name(newName), text(newName), textSize(1), textColor(Display::defaultTextColor), lineColor(Display::defaultLineColor), selectedColor(Display::defaultSelectColor)
+{
+    generateDimensions();
+}
+
+Widget::~Widget()
+{
+    
+}
+
 void Widget::select()
 {
     selected = !selected;
@@ -54,6 +65,12 @@ Button::Button(String newName, widgetFunc func, String newText, uint16_t textSiz
 
 }
 
+Button::Button(String newName, widgetFunc func)
+    : Widget(newName), payload(func)
+{
+
+}
+
 Button::~Button()
 {
 
@@ -68,6 +85,12 @@ void Button::activate()
 
 Label::Label(String newName, String newText, uint16_t textSize, uint16_t newTextColor, uint16_t newLineColor, uint16_t newSelectedColor)
     : Widget(newName, newText, textSize, newTextColor, newLineColor, newSelectedColor)
+{
+
+}
+
+Label::Label(String newName)
+    : Widget(newName)
 {
 
 }

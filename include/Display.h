@@ -13,6 +13,8 @@ static SPIClass initspi(SPI0); // Must be 0 for Maix
 class Display : public Sipeed_ST7789
 {
 public:
+    static uint16_t defaultBgColor, defaultTextColor, defaultLineColor, defaultSelectColor;
+
     Display(int w, int h);
     ~Display();
 

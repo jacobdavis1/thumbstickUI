@@ -66,12 +66,15 @@ bool Thumbstick::hasActivity()
 
 void Thumbstick::update()
 {
-    if (switchPressed() && !pressed)
+    if (switchPressed())
     {
-        onClick();
-        pressed = true;
+        if (!pressed)
+        {
+            onClick();
+            pressed = true; 
+        }
     } 
-    else if (!switchPressed() && pressed)
+    else if (pressed)
     {
         pressed = false;
     }

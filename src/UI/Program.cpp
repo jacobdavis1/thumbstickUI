@@ -10,14 +10,14 @@ Program::~Program()
 
 }
 
-void Program::addMenu(Menu menu, String name)
+void Program::addMenu(Menu* menu)
 {
-    Program::menus[name] = menu;
+    Program::menus[menu->name] = menu;
 }
 
 void Program::navigateToMenu(String name)
 {
-    Menu* m = &menus[name];
+    Menu* m = menus[name];
     if (m != nullptr)
         Program::currentMenu = m;
 }
@@ -41,30 +41,20 @@ Menu* Program::getCurrent()
 
 void Program::setupMenus()
 {
-    Menu mainPage;
+    Menu* mainPage = new Menu("Main Page", 3, 3);
     {
-        mainPage.addButton("Left Button", [](){}, 20, 20);
-        mainPage.addButton("Right Button", [](){}, 200, 20);
-        mainPage.addButton("Left Button 2", [](){}, 20, 80);
-        mainPage.addButton("Right Button 2", [](){}, 200, 80);
-        mainPage.addButton("Left Button 3", [](){}, 20, 100);
-        mainPage.addButton("To Side Pg", [](){ navigateToMenu("Side Page"); }, 200, 100);
+        mainPage->addWidget((Widget*)new Button("Left Button", [](){}), 0, 0, 1, 1);
+        mainPage->addWidget((Widget*)new Button("To Side Pg", [](){ navigateToMenu("Side Page"); }), 0, 2, 2, 1);
 
-        mainPage.updateNavGraph("Left Button", "", "", "Right Button", "", "Left Button 2", "", "", "");
-        mainPage.updateNavGraph("Right Button", "", "", "", "", "Right Button 2", "", "Left Button", "");
-        mainPage.updateNavGraph("Left Button 2", "Left Button", "", "Right Button 2", "", "Left Button 3", "", "", "");
-        mainPage.updateNavGraph("Right Button 2", "Right Button", "", "", "", "To Side Pg", "", "Left Button 2", "");
-        mainPage.updateNavGraph("Left Button 3", "Left Button 2", "", "To Side Pg", "", "", "", "", "");
-        mainPage.updateNavGraph("To Side Pg", "Right Button 2", "", "", "", "", "", "Left Button 3", "");
-        addMenu(mainPage, "Main Page");
+        addMenu(mainPage);
     }
 
-    Menu sidePage;
+    Menu* sidePage = new Menu("Side Page", 2, 2);
     {
-        sidePage.addButton("Back", [](){ navigateToMenu("Main Page"); }, 100, 100);
-        addMenu(sidePage, "Side Page");
+        sidePage->addWidget((Widget*)new Button("Back", [](){ navigateToMenu("Main Page"); }), 0, 0, 2, 2);
+        addMenu(sidePage);
     }
 
-    rootMenu = &menus["Main Page"];
+    rootMenu = menus["Main Page"];
     currentMenu = rootMenu;
 }

@@ -2,14 +2,23 @@
 #include "OS/WindowManager.h"
 #include "Display.h"
 
-/*Menu::Menu(WindowManager* newWindowManager) : windowManager(newWindowManager)
+Menu::Menu(String name, uint16_t newSlotsW, uint16_t newSlotsH, uint16_t newX, uint16_t newY, uint16_t newW, uint16_t newH) 
+    : Widget(name), slotsW(newSlotsW), slotsH(newSlotsH)
 {
+    x = newX;
+    y = newY;
+    w = newW;
+    h = newH;
 
-}*/
+    for (int i = 0; i < slotsW; ++i)
+    {
+        navigation.push_back(std::vector<Widget*>());
 
-Menu::Menu()
-{
-    
+        for (int j = 0; j < slotsH; ++j)
+        {
+            navigation.at(i).push_back(nullptr);
+        }
+    }
 }
 
 Menu::~Menu()
@@ -24,107 +33,125 @@ void Menu::update()
 
 void Menu::draw(Display* display)
 {
-    for (int i = 0; i < navGraph.size(); ++i)
+    for (int i = 0; i < widgets.size(); ++i)
     {
-        navGraph.at(i).thisWidget->draw(display);
+        widgets.at(i)->draw(display);
     }
 }
 
-bool Menu::updateNavGraph(String name, String n, String ne, String e, String se, String s, String sw, String w, String nw)
+void Menu::updateNeighbors()
 {
-    String nodeNames[8] = {n, ne, e, se, s, sw, w, nw};
-
-    for (int i = 0; i < navGraph.size(); ++i)
+    for (int i = 0; i < slotsW; ++i)
     {
-        if (navGraph.at(i).name.equals(name))
+        for (int j = 0; j < slotsH; ++j)
         {
-            for (int j = 0; j < 8; ++j)
+            if (navigation.at(i).at(j) != nullptr)
             {
-                if (nodeNames[j] != "")
-                    navGraph.at(i).neighbors[j] = getNodeByName(nodeNames[j]);
-            }
+                // Check north
+                if (navigation.at(i).at(j)->neighbors[0] == nullptr)
+                    navigation.at(i).at(j)->neighbors[0] = findNeighbor(i, j, 0, -1);
 
-            return true;
+                // Check east
+                if (navigation.at(i).at(j)->neighbors[2] == nullptr)
+                    navigation.at(i).at(j)->neighbors[2] = findNeighbor(i, j, 1, 0);
+
+                // Check south
+                if (navigation.at(i).at(j)->neighbors[4] == nullptr)
+                    navigation.at(i).at(j)->neighbors[4] = findNeighbor(i, j, 0, 1);
+
+                // Check north
+                if (navigation.at(i).at(j)->neighbors[6] == nullptr)
+                    navigation.at(i).at(j)->neighbors[6] = findNeighbor(i, j, -1, 0);
+            }
+        }
+    }
+}
+
+Widget* Menu::findNeighbor(uint16_t slotX, uint16_t slotY, int16_t xDir, int16_t yDir)
+{
+    if (xDir != 0)
+    {
+        for (int i = slotX + xDir; i >= 0 && i < slotsW; i += xDir)
+        {
+            if (navigation.at(i).at(slotY) != nullptr && navigation.at(i).at(slotY) != navigation.at(slotX).at(slotY))
+                return navigation.at(i).at(slotY);
         }
     }
 
-    return false;
-}
-
-NavNode* Menu::getFirstNode()
-{
-    if (navGraph.size() > 0)
-        return &navGraph.at(0);
-    else return nullptr;
-}
-
-NavNode* Menu::getNodeByName(String name)
-{
-    for (int i = 0; i < navGraph.size(); ++i)
+    if (yDir != 0)
     {
-        if (navGraph.at(i).name.equals(name))
-            return &navGraph.at(i);
+        for (int j = slotY + yDir; j >= 0 && j < slotsH; j += yDir)
+        {
+            if (navigation.at(slotX).at(j) != nullptr && navigation.at(slotX).at(j) != navigation.at(slotX).at(slotY))
+                return navigation.at(slotX).at(j);
+        }
     }
 
     return nullptr;
 }
 
-NavNode* Menu::addButton(String newName, widgetFunc func, uint16_t newX, uint16_t newY)
+Widget* Menu::getFirstWidget()
 {
-    Button* b = new Button(newName, func, newName, 1, COLOR_WHITE, COLOR_WHITE, COLOR_YELLOW);
-    b->setPosition(newX, newY);
-    widgets[newName] = (Widget*)b;
-    
-    NavNode n, *p;
-    n.name = newName;
-    n.thisWidget = b;
-    navGraph.push_back(n);
-
-    p = &navGraph.back();
-    return p;
+    if (widgets.size() > 0)
+        return widgets.at(0);
+    else return nullptr;
 }
 
-NavNode* Menu::addButton(String newName, widgetFunc func, String newText, uint16_t newTextSize, uint16_t newTextColor, uint16_t newLineColor, uint16_t newSelctedColor, uint16_t newX, uint16_t newY)
+Widget* Menu::getWidgetByName(String name)
 {
-    Button* b = new Button(newName, func, newText, newTextSize, newTextColor, newLineColor, newSelctedColor);
-    b->setPosition(newX, newY);
-    widgets[newName] = (Widget*)b;
-    
-    NavNode n, *p;
-    n.name = newName;
-    n.thisWidget = b;
-    navGraph.push_back(n);
-
-    p = &navGraph.back();
-    return p;
+    return widgets[getWidgetIndexByName(name)];
 }
 
-NavNode* Menu::addLabel(String newName, String newText, uint16_t newX, uint16_t newY)
+Widget* Menu::getWidgetByIndex(uint16_t i)
 {
-    Label* l = new Label(newName, newText, 1, COLOR_WHITE, COLOR_WHITE, COLOR_YELLOW);
-    l->setPosition(newX, newY);
-    widgets[newName] = (Widget*)l;
-    
-    NavNode n, *p;
-    n.name = newName;
-    n.thisWidget = l;
-    navGraph.push_back(n);
-
-    p = &navGraph.back();
-    return p;
+    if (i < widgets.size())
+        return widgets.at(0);
+    else return nullptr;
 }
 
-NavNode* Menu::addLabel(String newName, String newText, uint16_t newTextSize, uint16_t newTextColor, uint16_t newLineColor, uint16_t newSelectedColor, uint16_t newX, uint16_t newY)
+int Menu::getWidgetIndexByName(String name)
 {
-    Label* l = new Label(newName, newText, newTextSize, newTextColor, newLineColor, newSelectedColor);
-    l->setPosition(newX, newY);
-    widgets[newName] = (Widget*)l;
-    
-    NavNode n, *p;
-    n.name = newName;
-    n.thisWidget = l;
-    navGraph.push_back(n);
+    for (int i = 0; i < navigation.size(); ++i)
+    {
+        if (widgets.at(i)->name.equals(name))
+            return i;
+    }
 
-    p = &navGraph.back();
-    return p;
+    return -1;
 }
+
+void Menu::addWidget(Widget* widget, uint16_t widgetSlotX, uint16_t widgetSlotY, uint16_t widgetSlotW, uint16_t widgetSlotH)
+{
+    // Claim tiles in Navigation    
+    for (uint16_t i = widgetSlotX; i < widgetSlotX + widgetSlotW && i < slotsW; ++i)
+    {
+        for (uint16_t j = widgetSlotY; j < widgetSlotY + widgetSlotH && j < slotsH;  ++j)
+        {
+            navigation.at(i).at(j) = widget;
+        }
+    }
+
+    // Calculate size ratios
+    float xRat = w / (float)slotsW;
+    float yRat = h / (float)slotsH;
+
+    // Calculate pixel dimensions
+    uint16_t pixelW = widgetSlotW * xRat, 
+        pixelH = widgetSlotH * yRat, 
+        pixelX = widgetSlotX * xRat, 
+        pixelY = widgetSlotY * yRat;
+
+    widget->setPosition(pixelX, pixelY);
+    widget->generateDimensions();
+
+    // Cut off text to fit width boundaries
+    while (widget->w > pixelW)
+    {
+        widget->text.remove(widget->text.length() - 1);
+        widget->generateDimensions();
+    }
+
+    widgets.push_back(widget);
+    updateNeighbors();
+}
+

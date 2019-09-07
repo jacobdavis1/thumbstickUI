@@ -18,7 +18,7 @@ public:
     ~Program();
 
     static void init();
-    static void addMenu(Menu menu, String name);
+    static void addMenu(Menu* menu);
     static void navigateToMenu(String name);
     static void setRoot(Menu* menuPtr);
     static Menu* getRoot();
@@ -27,6 +27,6 @@ public:
     static void setupMenus();
 
 //private:
-    inline static std::map<String, Menu> menus;
+    inline static std::map<String, Menu*> menus;
     inline static Menu *rootMenu, *currentMenu;
 };
