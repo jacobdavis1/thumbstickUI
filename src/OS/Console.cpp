@@ -28,7 +28,7 @@
             if (messages.size() > 0)
             {
                 int x = 0, y = 5;
-                display->setTextColor(COLOR_WHITE);
+                display->setTextColor(COLOR_YELLOW);
 
                 display->setTextSize(1);
                 display->setCursor(x, y);

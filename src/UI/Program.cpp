@@ -41,10 +41,11 @@ Menu* Program::getCurrent()
 
 void Program::setupMenus()
 {
-    Menu* mainPage = new Menu("Main Page", 3, 3);
+    Menu* mainPage = new Menu("Main Page", 5, 3);
     {
         mainPage->addWidget((Widget*)new Button("Left Button", [](){}), 0, 0, 1, 1);
         mainPage->addWidget((Widget*)new Button("To Side Pg", [](){ navigateToMenu("Side Page"); }), 0, 2, 2, 1);
+        mainPage->addWidget((Widget*)new DigitalOutSwitch("Out Switch", 7), 2, 0, 1, 2);
 
         addMenu(mainPage);
     }

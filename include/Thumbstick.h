@@ -2,6 +2,8 @@
     Access thumbstick values.
 */
 
+#ifndef THUMBSTICK_H
+#define THUMBSTICK_H
 typedef void(*clickCallback) ();
 
 enum class ThumbstickDirection { NONE, N, NE, E, SE, S, SW, W, NW };
@@ -31,3 +33,4 @@ public:
     bool switchPressed();
     void onClick();
 };
+#endif

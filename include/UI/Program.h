@@ -4,6 +4,8 @@
     program being run. It is what WindowManager navigates.
 */
 
+#ifndef PROGRAM_H
+#define PROGRAM_H
 #include <Arduino.h>
 #undef min
 #undef max
@@ -30,3 +32,5 @@ public:
     inline static std::map<String, Menu*> menus;
     inline static Menu *rootMenu, *currentMenu;
 };
+
+#endif

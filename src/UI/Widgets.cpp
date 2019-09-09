@@ -1,3 +1,4 @@
+#include <Arduino.h>
 #include "UI/Widgets.h"
 #include "Display.h"
 
@@ -106,4 +107,58 @@ void Label::draw(Display* display)
     display->setTextColor(textColor);
     display->setCursor(textX, textY);
     display->println(text);
+}
+
+DigitalOutSwitch::DigitalOutSwitch(String newName, uint16_t newPinNumber, String newText, uint16_t textSize, uint16_t newTextColor, uint16_t newLineColor, uint16_t newSelectedColor, uint16_t newOnColor, uint16_t newOffColor)
+    : Widget(newName, newText, textSize, newTextColor, newLineColor, newSelectedColor), pinNumber(newPinNumber), onColor(newOnColor), offColor(newOffColor)
+{
+    pinMode(pinNumber, OUTPUT);
+}
+
+DigitalOutSwitch::DigitalOutSwitch(String newName, uint16_t newPinNumber)
+    : Widget(newName), pinNumber(newPinNumber), onColor(selectedColor), offColor(lineColor)
+{
+    pinMode(pinNumber, OUTPUT);
+}
+
+DigitalOutSwitch::~DigitalOutSwitch()
+{
+
+}
+
+void DigitalOutSwitch::draw(Display* display)
+{
+    if (pinActive)
+        display->fillRect(x, y, w, h, onColor);
+    else
+        display->fillRect(x, y, w, h, offColor);
+    
+    if (selected)
+        display->drawBox(x, y, w, h, selectedColor);
+    else
+        display->drawBox(x, y, w, h, lineColor);
+
+    display->setTextSize(textSize);
+    display->setTextColor(textColor);
+    display->setCursor(textX, textY);
+    display->println(text);
+}
+
+void DigitalOutSwitch::activate()
+{
+    if (pinActive)
+        digitalWrite(pinNumber, LOW);
+    else
+        digitalWrite(pinNumber, HIGH);
+    
+    pinActive = !pinActive;
+}
+
+void DigitalOutSwitch::generateDimensions()
+{
+    w = 2*textSize*textBuffer;
+    h = w;
+
+    textX = x + w + textBuffer;
+    textY = y - w/2 + textBuffer;
 }

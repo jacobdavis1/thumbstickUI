@@ -4,6 +4,8 @@
     necessary.
 */
 
+#ifndef SCHEDULER_H
+#define SCHEDULER_H
 #include <list>
 
 class Task;
@@ -28,3 +30,5 @@ private:
     Task* tickRatioTask;
     double ticksPerSecond;
 };
+
+#endif

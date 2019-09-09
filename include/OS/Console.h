@@ -1,3 +1,6 @@
+
+#ifndef CONSOLE_H
+#define CONSOLE_H
 // Arduino.h defines min and max, which conflict with std
 #include <Arduino.h>
 #undef min
@@ -23,3 +26,4 @@ private:
     std::deque<String> messages;
     bool changed;
 };
+#endif

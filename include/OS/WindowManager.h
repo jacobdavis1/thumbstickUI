@@ -3,23 +3,36 @@
     through the current menu.
 */
 
+#ifndef WINDOWMANAGER_H
+#define WINDOWMANAGER_H
+
 #include "UI/Program.h"
 #include "UI/Menu.h"
+#include "OS/Console.h"
+#include "Thumbstick.h"
+#include "Scheduler.h"
 
 class WindowManager
 {
 public:
-    WindowManager();
-    ~WindowManager();
+    static void init();
+    static void update();
+    static void draw();
 
-    void update();
-    void draw();
+    static void changeMenu(String newMenuName);
+    static void activateSelection();
 
-    void changeMenu(String newMenuName);
-    void activateSelection();
+//private:
+    static void printMenuDiagnostics();
 
-private:
-    Program program;
-    Menu* currentMenu;
-    Widget* currentSelection;
+    inline static Menu* currentMenu;
+    inline static Widget* currentWidget;
+
+    inline static Display* display;
+    inline static Console* console;
+    inline static Thumbstick* thumb;
+    inline static Scheduler* scheduler;
+    inline static bool thumbSw = false;
 };
+
+#endif

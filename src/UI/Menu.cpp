@@ -45,7 +45,7 @@ void Menu::updateNeighbors()
     {
         for (int j = 0; j < slotsH; ++j)
         {
-            if (navigation.at(i).at(j) != nullptr)
+            if (navigation.at(i).at(j) != nullptr && navigation.at(i).at(j)->slotX == i && navigation.at(i).at(j)->slotY == j)
             {
                 // Check north
                 if (navigation.at(i).at(j)->neighbors[0] == nullptr)
@@ -73,16 +73,21 @@ Widget* Menu::findNeighbor(uint16_t slotX, uint16_t slotY, int16_t xDir, int16_t
     {
         for (int i = slotX + xDir; i >= 0 && i < slotsW; i += xDir)
         {
-            if (navigation.at(i).at(slotY) != nullptr && navigation.at(i).at(slotY) != navigation.at(slotX).at(slotY))
+            if(navigation.at(i).at(slotY) == navigation.at(slotX).at(slotY))
+                break;
+
+            if (navigation.at(i).at(slotY) != nullptr)
                 return navigation.at(i).at(slotY);
         }
     }
-
-    if (yDir != 0)
+    else if (yDir != 0)
     {
         for (int j = slotY + yDir; j >= 0 && j < slotsH; j += yDir)
         {
-            if (navigation.at(slotX).at(j) != nullptr && navigation.at(slotX).at(j) != navigation.at(slotX).at(slotY))
+            if (navigation.at(slotX).at(j) == navigation.at(slotX).at(slotY))
+                break;
+
+            if (navigation.at(slotX).at(j) != nullptr)
                 return navigation.at(slotX).at(j);
         }
     }
@@ -142,6 +147,10 @@ void Menu::addWidget(Widget* widget, uint16_t widgetSlotX, uint16_t widgetSlotY,
         pixelY = widgetSlotY * yRat;
 
     widget->setPosition(pixelX, pixelY);
+    widget->slotX = widgetSlotX;
+    widget->slotY = widgetSlotY;
+    widget->slotW = widgetSlotH;
+    widget->slotH = widgetSlotW;
     widget->generateDimensions();
 
     // Cut off text to fit width boundaries
